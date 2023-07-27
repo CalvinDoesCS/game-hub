@@ -5,20 +5,16 @@ import {
   InputLeftElement,
   HStack,
 } from "@chakra-ui/react";
+
 import { AiOutlineSearch } from "react-icons/ai";
 import ColorModeSwitch from "./ColorModeSwitch";
-
+import { SearchInput } from "./SearchInput.tsx";
 const NavBar = () => {
   return (
     <>
-      <HStack>
+      <HStack padding="10px">
         <Image boxSize="75px" src="src/assets/logo.webp" alt="logo" />
-        <InputGroup>
-          <InputLeftElement>
-            <AiOutlineSearch />
-          </InputLeftElement>
-          <Input placeholder="Search games... " />
-        </InputGroup>
+        <SearchInput></SearchInput>
         <ColorModeSwitch />
       </HStack>
     </>
