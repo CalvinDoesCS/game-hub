@@ -1,20 +1,17 @@
-import {
-  Input,
-  InputGroup,
-  Image,
-  InputLeftElement,
-  HStack,
-} from "@chakra-ui/react";
+import { Image, HStack } from "@chakra-ui/react";
 
-import { AiOutlineSearch } from "react-icons/ai";
+interface Props {
+  onSearch: (searchText: string) => void;
+}
+
 import ColorModeSwitch from "./ColorModeSwitch";
 import { SearchInput } from "./SearchInput.tsx";
-const NavBar = () => {
+const NavBar = ({ onSearch }: Props) => {
   return (
     <>
       <HStack padding="10px">
         <Image boxSize="75px" src="src/assets/logo.webp" alt="logo" />
-        <SearchInput></SearchInput>
+        <SearchInput onSearch={onSearch}></SearchInput>
         <ColorModeSwitch />
       </HStack>
     </>
