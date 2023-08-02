@@ -7,7 +7,7 @@ import Layout from "./pages/Layout";
 const router = createBrowserRouter([
   {
     path: "/",
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
     element: <Layout />,
     children: [
       {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "games/:id",
+        path: "games/:slug",
         element: <GameDetailPage />,
       },
     ],
