@@ -28,4 +28,12 @@ I learn how to:
 - Write clean code like a pro
 - Apply best practices
 
+## Technology Stack when Creating GameHub
+- React + TypeScript
+- Charka UI
+- React Query
+- Axios Library
+- React Router DOM
+- Zustand (State Management System)
+
 
